@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.6" type="plugin" group="system" method="upgrade">
+	<name>System - Language Cache</name>
+	<author>Michael Babker</author>
+	<creationDate>January 2017</creationDate>
+	<copyright>Copyright (C) 2017 Michael Babker. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>michael.babker@gmail.com</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Plugin to create a cached language object.</description>
+	<files>
+		<filename plugin="languagecache">languagecache.php</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="cache_language"
+					type="radio"
+					label="Cached Language Object"
+					description="If enabled, a compiled JLanguage object will be used."
+					class="btn-group btn-group-yesno"
+					default="1"
+					>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
